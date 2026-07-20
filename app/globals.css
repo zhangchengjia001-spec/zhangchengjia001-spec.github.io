@@ -6,8 +6,8 @@ html { scroll-behavior:smooth; }
 body { margin:0; color:var(--ink); background:var(--paper); font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif; }
 a { color:inherit; text-decoration:none; }
 .nav-shell { height:78px; padding:0 4.5vw; position:fixed; inset:0 0 auto; z-index:50; display:flex; align-items:center; justify-content:space-between; color:white; background:rgba(255,255,255,0); transition:height .45s cubic-bezier(.16,1,.3,1),color .4s ease,background-color .45s ease,box-shadow .45s ease; }
-.nav-shell::before { content:""; position:absolute; inset:0; z-index:-1; opacity:0; background:linear-gradient(115deg,rgba(104,100,143,.30),rgba(248,247,251,.74) 62%,rgba(104,100,143,.18)); backdrop-filter:blur(20px) saturate(165%); -webkit-backdrop-filter:blur(20px) saturate(165%); transition:opacity .45s ease; }
-.nav-shell.nav-scrolled { height:68px; color:#15131c; box-shadow:0 8px 32px rgba(104,100,143,.16); }
+.nav-shell::before { content:""; position:absolute; inset:0; z-index:-1; opacity:0; background:linear-gradient(115deg,rgba(243,242,248,.93),rgba(255,255,255,.95) 58%,rgba(238,236,246,.92)); backdrop-filter:blur(20px) saturate(120%); -webkit-backdrop-filter:blur(20px) saturate(120%); transition:opacity .45s ease; }
+.nav-shell.nav-scrolled { height:68px; color:#15131c; box-shadow:0 6px 24px rgba(57,52,91,.08),inset 0 -1px rgba(255,255,255,.68); }
 .nav-shell.nav-scrolled::before { opacity:1; }
 .brand { display:flex; align-items:center; height:46px; }
 .brand img { display:block; width:108px; height:auto; object-fit:contain; transition:filter .4s ease; }
@@ -18,7 +18,7 @@ nav { display:flex; gap:2.3vw; font-size:14px; }
 nav a, .nav-actions a { transition:opacity .25s; }
 nav a:hover, .nav-actions a:hover { opacity:.6; }
 .nav-actions { display:flex; align-items:center; gap:24px; font-size:14px; }
-.nav-cta { padding:11px 19px; border:1px solid rgba(255,255,255,.7); display:inline-flex; align-items:center; gap:9px; transition:color .4s ease,border-color .4s ease,background-color .4s ease!important; }
+.nav-cta { padding:11px 19px; border:1px solid rgba(255,255,255,.7); border-radius:999px; display:inline-flex; align-items:center; gap:9px; transition:color .4s ease,border-color .4s ease,background-color .4s ease!important; }
 .download-icon { position:relative; display:inline-block; width:15px; height:15px; border-bottom:1.5px solid currentColor; }
 .download-icon::before { content:""; position:absolute; left:6.75px; top:0; width:1.5px; height:9px; background:currentColor; }
 .download-icon::after { content:""; position:absolute; left:4.2px; top:4.5px; width:5px; height:5px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform:rotate(45deg); }
@@ -33,7 +33,7 @@ nav a:hover, .nav-actions a:hover { opacity:.6; }
 .hero h1 { font-size:clamp(48px,6vw,92px); font-weight:300; letter-spacing:.09em; margin:0; }
 .hero-copy>p:not(.eyebrow) { font-size:18px; letter-spacing:.22em; opacity:.8; }
 .hero-actions { position:absolute; z-index:4; left:50%; bottom:72px; transform:translateX(-50%); display:flex; justify-content:center; gap:12px; }
-.button { display:inline-flex; min-width:164px; height:48px; align-items:center; justify-content:center; padding:0 28px; border:1px solid transparent; font-size:14px; letter-spacing:.08em; transition:color .42s cubic-bezier(.16,1,.3,1),background-color .42s cubic-bezier(.16,1,.3,1),border-color .42s cubic-bezier(.16,1,.3,1),transform .42s cubic-bezier(.16,1,.3,1); }
+.button { display:inline-flex; min-width:164px; height:48px; align-items:center; justify-content:center; padding:0 28px; border:1px solid transparent; border-radius:999px; font-size:14px; letter-spacing:.08em; transition:color .42s cubic-bezier(.16,1,.3,1),background-color .42s cubic-bezier(.16,1,.3,1),border-color .42s cubic-bezier(.16,1,.3,1),transform .42s cubic-bezier(.16,1,.3,1); }
 .button-light { background:white; border-color:white; color:#18171d; }
 .button-light:hover { background:rgba(13,12,18,.28); color:white; }
 .button-line { color:white; border-color:rgba(255,255,255,.74); background:rgba(13,12,18,.22); backdrop-filter:blur(8px); }
